@@ -1,0 +1,1038 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.7": {
+      "Microsoft.Build/15.7.0-preview-000124": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Build.Framework": "15.7.0-preview-000124",
+          "Microsoft.VisualStudio.Setup.Configuration.Interop": "1.2.304-preview5",
+          "System.Collections.Immutable": "1.3.1",
+          "System.IO.Compression": "4.3.0",
+          "System.Runtime.InteropServices.RuntimeInformation": "4.3.0",
+          "System.Threading.Tasks.Dataflow": "4.5.24"
+        },
+        "frameworkAssemblies": [
+          "System.Configuration"
+        ],
+        "compile": {
+          "lib/net46/Microsoft.Build.dll": {}
+        },
+        "runtime": {
+          "lib/net46/Microsoft.Build.dll": {}
+        }
+      },
+      "Microsoft.Build.Framework/15.7.0-preview-000124": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Xaml"
+        ],
+        "compile": {
+          "lib/net46/Microsoft.Build.Framework.dll": {}
+        },
+        "runtime": {
+          "lib/net46/Microsoft.Build.Framework.dll": {}
+        }
+      },
+      "Microsoft.Build.Runtime/15.7.0-preview-000124": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Build": "15.7.0-preview-000124",
+          "Microsoft.Build.Tasks.Core": "15.7.0-preview-000124"
+        },
+        "frameworkAssemblies": [
+          "System.Configuration",
+          "System.Core",
+          "System.Xml"
+        ],
+        "contentFiles": {
+          "contentFiles/any/net46/15.0/Microsoft.Common.props": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "15.0/Microsoft.Common.props"
+          },
+          "contentFiles/any/net46/MSBuild.exe": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "MSBuild.exe"
+          },
+          "contentFiles/any/net46/MSBuild.exe.config": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "MSBuild.exe.config"
+          },
+          "contentFiles/any/net46/Microsoft.CSharp.CrossTargeting.targets": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "Microsoft.CSharp.CrossTargeting.targets"
+          },
+          "contentFiles/any/net46/Microsoft.CSharp.CurrentVersion.targets": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "Microsoft.CSharp.CurrentVersion.targets"
+          },
+          "contentFiles/any/net46/Microsoft.CSharp.targets": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "Microsoft.CSharp.targets"
+          },
+          "contentFiles/any/net46/Microsoft.Common.CrossTargeting.targets": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "Microsoft.Common.CrossTargeting.targets"
+          },
+          "contentFiles/any/net46/Microsoft.Common.CurrentVersion.targets": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "Microsoft.Common.CurrentVersion.targets"
+          },
+          "contentFiles/any/net46/Microsoft.Common.overridetasks": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "Microsoft.Common.overridetasks"
+          },
+          "contentFiles/any/net46/Microsoft.Common.targets": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "Microsoft.Common.targets"
+          },
+          "contentFiles/any/net46/Microsoft.Common.tasks": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "Microsoft.Common.tasks"
+          },
+          "contentFiles/any/net46/Microsoft.Data.Entity.targets": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "Microsoft.Data.Entity.targets"
+          },
+          "contentFiles/any/net46/Microsoft.NETFramework.CurrentVersion.props": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "Microsoft.NETFramework.CurrentVersion.props"
+          },
+          "contentFiles/any/net46/Microsoft.NETFramework.CurrentVersion.targets": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "Microsoft.NETFramework.CurrentVersion.targets"
+          },
+          "contentFiles/any/net46/Microsoft.NETFramework.props": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "Microsoft.NETFramework.props"
+          },
+          "contentFiles/any/net46/Microsoft.NETFramework.targets": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "Microsoft.NETFramework.targets"
+          },
+          "contentFiles/any/net46/Microsoft.ServiceModel.targets": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "Microsoft.ServiceModel.targets"
+          },
+          "contentFiles/any/net46/Microsoft.VisualBasic.CrossTargeting.targets": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "Microsoft.VisualBasic.CrossTargeting.targets"
+          },
+          "contentFiles/any/net46/Microsoft.VisualBasic.CurrentVersion.targets": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "Microsoft.VisualBasic.CurrentVersion.targets"
+          },
+          "contentFiles/any/net46/Microsoft.VisualBasic.targets": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "Microsoft.VisualBasic.targets"
+          },
+          "contentFiles/any/net46/Microsoft.VisualStudioVersion.v11.Common.props": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "Microsoft.VisualStudioVersion.v11.Common.props"
+          },
+          "contentFiles/any/net46/Microsoft.VisualStudioVersion.v12.Common.props": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "Microsoft.VisualStudioVersion.v12.Common.props"
+          },
+          "contentFiles/any/net46/Microsoft.VisualStudioVersion.v14.Common.props": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "Microsoft.VisualStudioVersion.v14.Common.props"
+          },
+          "contentFiles/any/net46/Microsoft.WinFx.targets": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "Microsoft.WinFx.targets"
+          },
+          "contentFiles/any/net46/Microsoft.WorkflowBuildExtensions.targets": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "Microsoft.WorkflowBuildExtensions.targets"
+          },
+          "contentFiles/any/net46/Microsoft.Xaml.targets": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "Microsoft.Xaml.targets"
+          },
+          "contentFiles/any/net46/SdkResolvers/NuGet.MSBuildSdkResolver/NuGet.MSBuildSdkResolver.dll": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "SdkResolvers/NuGet.MSBuildSdkResolver/NuGet.MSBuildSdkResolver.dll"
+          },
+          "contentFiles/any/net46/Workflow.Targets": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "Workflow.Targets"
+          },
+          "contentFiles/any/net46/Workflow.VisualBasic.Targets": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "Workflow.VisualBasic.Targets"
+          }
+        }
+      },
+      "Microsoft.Build.Tasks.Core/15.7.0-preview-000124": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Build.Framework": "15.7.0-preview-000124",
+          "Microsoft.Build.Utilities.Core": "15.7.0-preview-000124",
+          "Microsoft.VisualStudio.Setup.Configuration.Interop": "1.2.304-preview5",
+          "System.Collections.Immutable": "1.3.1"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.Core",
+          "System.Reflection",
+          "System.Runtime.Serialization",
+          "System.Security",
+          "System.Windows.Forms",
+          "System.Xaml",
+          "System.Xml",
+          "System.Xml.Linq"
+        ],
+        "compile": {
+          "lib/net46/Microsoft.Build.Tasks.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net46/Microsoft.Build.Tasks.Core.dll": {}
+        }
+      },
+      "Microsoft.Build.Utilities.Core/15.7.0-preview-000124": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Build.Framework": "15.7.0-preview-000124",
+          "Microsoft.VisualStudio.Setup.Configuration.Interop": "1.2.304-preview5",
+          "System.Collections.Immutable": "1.3.1",
+          "System.Runtime.InteropServices.RuntimeInformation": "4.3.0"
+        },
+        "frameworkAssemblies": [
+          "System.Configuration"
+        ],
+        "compile": {
+          "lib/net46/Microsoft.Build.Utilities.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net46/Microsoft.Build.Utilities.Core.dll": {}
+        }
+      },
+      "Microsoft.VisualStudio.Setup.Configuration.Interop/1.2.304-preview5": {
+        "type": "package",
+        "compile": {
+          "lib/net35/Microsoft.VisualStudio.Setup.Configuration.Interop.dll": {}
+        },
+        "runtime": {
+          "lib/net35/Microsoft.VisualStudio.Setup.Configuration.Interop.dll": {}
+        }
+      },
+      "System.Collections.Immutable/1.3.1": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+win8+wp8+wpa81/System.Collections.Immutable.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win8+wp8+wpa81/System.Collections.Immutable.dll": {}
+        }
+      },
+      "System.IO.Compression/4.3.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/System.IO.Compression.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.IO.Compression.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netstandard1.3/System.IO.Compression.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/net46/System.IO.Compression.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.Runtime.InteropServices.RuntimeInformation/4.3.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard1.1/System.Runtime.InteropServices.RuntimeInformation.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Runtime.InteropServices.RuntimeInformation.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netstandard1.1/System.Runtime.InteropServices.RuntimeInformation.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/net45/System.Runtime.InteropServices.RuntimeInformation.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.Threading.Tasks.Dataflow/4.5.24": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+win8+wpa81/System.Threading.Tasks.Dataflow.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win8+wpa81/System.Threading.Tasks.Dataflow.dll": {}
+        }
+      },
+      "lib/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/lib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/lib.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7/win7-x86": {
+      "Microsoft.Build/15.7.0-preview-000124": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Build.Framework": "15.7.0-preview-000124",
+          "Microsoft.VisualStudio.Setup.Configuration.Interop": "1.2.304-preview5",
+          "System.Collections.Immutable": "1.3.1",
+          "System.IO.Compression": "4.3.0",
+          "System.Runtime.InteropServices.RuntimeInformation": "4.3.0",
+          "System.Threading.Tasks.Dataflow": "4.5.24"
+        },
+        "frameworkAssemblies": [
+          "System.Configuration"
+        ],
+        "compile": {
+          "lib/net46/Microsoft.Build.dll": {}
+        },
+        "runtime": {
+          "lib/net46/Microsoft.Build.dll": {}
+        }
+      },
+      "Microsoft.Build.Framework/15.7.0-preview-000124": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Xaml"
+        ],
+        "compile": {
+          "lib/net46/Microsoft.Build.Framework.dll": {}
+        },
+        "runtime": {
+          "lib/net46/Microsoft.Build.Framework.dll": {}
+        }
+      },
+      "Microsoft.Build.Runtime/15.7.0-preview-000124": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Build": "15.7.0-preview-000124",
+          "Microsoft.Build.Tasks.Core": "15.7.0-preview-000124"
+        },
+        "frameworkAssemblies": [
+          "System.Configuration",
+          "System.Core",
+          "System.Xml"
+        ],
+        "contentFiles": {
+          "contentFiles/any/net46/15.0/Microsoft.Common.props": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "15.0/Microsoft.Common.props"
+          },
+          "contentFiles/any/net46/MSBuild.exe": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "MSBuild.exe"
+          },
+          "contentFiles/any/net46/MSBuild.exe.config": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "MSBuild.exe.config"
+          },
+          "contentFiles/any/net46/Microsoft.CSharp.CrossTargeting.targets": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "Microsoft.CSharp.CrossTargeting.targets"
+          },
+          "contentFiles/any/net46/Microsoft.CSharp.CurrentVersion.targets": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "Microsoft.CSharp.CurrentVersion.targets"
+          },
+          "contentFiles/any/net46/Microsoft.CSharp.targets": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "Microsoft.CSharp.targets"
+          },
+          "contentFiles/any/net46/Microsoft.Common.CrossTargeting.targets": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "Microsoft.Common.CrossTargeting.targets"
+          },
+          "contentFiles/any/net46/Microsoft.Common.CurrentVersion.targets": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "Microsoft.Common.CurrentVersion.targets"
+          },
+          "contentFiles/any/net46/Microsoft.Common.overridetasks": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "Microsoft.Common.overridetasks"
+          },
+          "contentFiles/any/net46/Microsoft.Common.targets": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "Microsoft.Common.targets"
+          },
+          "contentFiles/any/net46/Microsoft.Common.tasks": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "Microsoft.Common.tasks"
+          },
+          "contentFiles/any/net46/Microsoft.Data.Entity.targets": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "Microsoft.Data.Entity.targets"
+          },
+          "contentFiles/any/net46/Microsoft.NETFramework.CurrentVersion.props": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "Microsoft.NETFramework.CurrentVersion.props"
+          },
+          "contentFiles/any/net46/Microsoft.NETFramework.CurrentVersion.targets": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "Microsoft.NETFramework.CurrentVersion.targets"
+          },
+          "contentFiles/any/net46/Microsoft.NETFramework.props": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "Microsoft.NETFramework.props"
+          },
+          "contentFiles/any/net46/Microsoft.NETFramework.targets": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "Microsoft.NETFramework.targets"
+          },
+          "contentFiles/any/net46/Microsoft.ServiceModel.targets": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "Microsoft.ServiceModel.targets"
+          },
+          "contentFiles/any/net46/Microsoft.VisualBasic.CrossTargeting.targets": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "Microsoft.VisualBasic.CrossTargeting.targets"
+          },
+          "contentFiles/any/net46/Microsoft.VisualBasic.CurrentVersion.targets": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "Microsoft.VisualBasic.CurrentVersion.targets"
+          },
+          "contentFiles/any/net46/Microsoft.VisualBasic.targets": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "Microsoft.VisualBasic.targets"
+          },
+          "contentFiles/any/net46/Microsoft.VisualStudioVersion.v11.Common.props": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "Microsoft.VisualStudioVersion.v11.Common.props"
+          },
+          "contentFiles/any/net46/Microsoft.VisualStudioVersion.v12.Common.props": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "Microsoft.VisualStudioVersion.v12.Common.props"
+          },
+          "contentFiles/any/net46/Microsoft.VisualStudioVersion.v14.Common.props": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "Microsoft.VisualStudioVersion.v14.Common.props"
+          },
+          "contentFiles/any/net46/Microsoft.WinFx.targets": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "Microsoft.WinFx.targets"
+          },
+          "contentFiles/any/net46/Microsoft.WorkflowBuildExtensions.targets": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "Microsoft.WorkflowBuildExtensions.targets"
+          },
+          "contentFiles/any/net46/Microsoft.Xaml.targets": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "Microsoft.Xaml.targets"
+          },
+          "contentFiles/any/net46/SdkResolvers/NuGet.MSBuildSdkResolver/NuGet.MSBuildSdkResolver.dll": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "SdkResolvers/NuGet.MSBuildSdkResolver/NuGet.MSBuildSdkResolver.dll"
+          },
+          "contentFiles/any/net46/Workflow.Targets": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "Workflow.Targets"
+          },
+          "contentFiles/any/net46/Workflow.VisualBasic.Targets": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "Workflow.VisualBasic.Targets"
+          }
+        }
+      },
+      "Microsoft.Build.Tasks.Core/15.7.0-preview-000124": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Build.Framework": "15.7.0-preview-000124",
+          "Microsoft.Build.Utilities.Core": "15.7.0-preview-000124",
+          "Microsoft.VisualStudio.Setup.Configuration.Interop": "1.2.304-preview5",
+          "System.Collections.Immutable": "1.3.1"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.Core",
+          "System.Reflection",
+          "System.Runtime.Serialization",
+          "System.Security",
+          "System.Windows.Forms",
+          "System.Xaml",
+          "System.Xml",
+          "System.Xml.Linq"
+        ],
+        "compile": {
+          "lib/net46/Microsoft.Build.Tasks.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net46/Microsoft.Build.Tasks.Core.dll": {}
+        }
+      },
+      "Microsoft.Build.Utilities.Core/15.7.0-preview-000124": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Build.Framework": "15.7.0-preview-000124",
+          "Microsoft.VisualStudio.Setup.Configuration.Interop": "1.2.304-preview5",
+          "System.Collections.Immutable": "1.3.1",
+          "System.Runtime.InteropServices.RuntimeInformation": "4.3.0"
+        },
+        "frameworkAssemblies": [
+          "System.Configuration"
+        ],
+        "compile": {
+          "lib/net46/Microsoft.Build.Utilities.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net46/Microsoft.Build.Utilities.Core.dll": {}
+        }
+      },
+      "Microsoft.VisualStudio.Setup.Configuration.Interop/1.2.304-preview5": {
+        "type": "package",
+        "compile": {
+          "lib/net35/Microsoft.VisualStudio.Setup.Configuration.Interop.dll": {}
+        },
+        "runtime": {
+          "lib/net35/Microsoft.VisualStudio.Setup.Configuration.Interop.dll": {}
+        }
+      },
+      "System.Collections.Immutable/1.3.1": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+win8+wp8+wpa81/System.Collections.Immutable.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win8+wp8+wpa81/System.Collections.Immutable.dll": {}
+        }
+      },
+      "System.IO.Compression/4.3.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/System.IO.Compression.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.IO.Compression.dll": {}
+        }
+      },
+      "System.Runtime.InteropServices.RuntimeInformation/4.3.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard1.1/System.Runtime.InteropServices.RuntimeInformation.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Runtime.InteropServices.RuntimeInformation.dll": {}
+        }
+      },
+      "System.Threading.Tasks.Dataflow/4.5.24": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+win8+wpa81/System.Threading.Tasks.Dataflow.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win8+wpa81/System.Threading.Tasks.Dataflow.dll": {}
+        }
+      },
+      "lib/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/lib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/lib.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Microsoft.Build/15.7.0-preview-000124": {
+      "sha512": "YUgcvjxj+RZ4FRo1C4ZPYn2mGx23RxpiKrwUSnTETI3Phg3YbKltxQ43JN7qEyrVrJeilETP88XOWs02J3NJYw==",
+      "type": "package",
+      "path": "microsoft.build/15.7.0-preview-000124",
+      "files": [
+        "lib/net46/Microsoft.Build.dll",
+        "lib/net46/Microsoft.Build.pdb",
+        "lib/net46/Microsoft.Build.xml",
+        "lib/netcoreapp2.1/Microsoft.Build.dll",
+        "lib/netcoreapp2.1/Microsoft.Build.pdb",
+        "lib/netstandard2.0/Microsoft.Build.dll",
+        "lib/netstandard2.0/Microsoft.Build.pdb",
+        "lib/netstandard2.0/Microsoft.Build.xml",
+        "microsoft.build.15.7.0-preview-000124.nupkg.sha512",
+        "microsoft.build.nuspec",
+        "notices/THIRDPARTYNOTICES.txt"
+      ]
+    },
+    "Microsoft.Build.Framework/15.7.0-preview-000124": {
+      "sha512": "HJSorCxDDSx7+0N6vV63niwW6gkFfYiSvO9EX9olkKcmzGiHxC9N4zb9w7OjLd15oxoTYkR366PhekUMr5j+jQ==",
+      "type": "package",
+      "path": "microsoft.build.framework/15.7.0-preview-000124",
+      "files": [
+        "lib/net46/Microsoft.Build.Framework.dll",
+        "lib/net46/Microsoft.Build.Framework.pdb",
+        "lib/net46/Microsoft.Build.Framework.xml",
+        "lib/netstandard2.0/Microsoft.Build.Framework.dll",
+        "lib/netstandard2.0/Microsoft.Build.Framework.pdb",
+        "lib/netstandard2.0/Microsoft.Build.Framework.xml",
+        "microsoft.build.framework.15.7.0-preview-000124.nupkg.sha512",
+        "microsoft.build.framework.nuspec",
+        "notices/THIRDPARTYNOTICES.txt"
+      ]
+    },
+    "Microsoft.Build.Runtime/15.7.0-preview-000124": {
+      "sha512": "Ko6mN3+TV/LueKhNQTqvy6RQCebLfTYE3qocOkyJsr33NkJ7K8NKnL/MixCtWW7kL+erANu+LOATIred7r+u0Q==",
+      "type": "package",
+      "path": "microsoft.build.runtime/15.7.0-preview-000124",
+      "files": [
+        "contentFiles/any/net46/15.0/Microsoft.Common.props",
+        "contentFiles/any/net46/MSBuild.exe",
+        "contentFiles/any/net46/MSBuild.exe.config",
+        "contentFiles/any/net46/Microsoft.CSharp.CrossTargeting.targets",
+        "contentFiles/any/net46/Microsoft.CSharp.CurrentVersion.targets",
+        "contentFiles/any/net46/Microsoft.CSharp.targets",
+        "contentFiles/any/net46/Microsoft.Common.CrossTargeting.targets",
+        "contentFiles/any/net46/Microsoft.Common.CurrentVersion.targets",
+        "contentFiles/any/net46/Microsoft.Common.overridetasks",
+        "contentFiles/any/net46/Microsoft.Common.targets",
+        "contentFiles/any/net46/Microsoft.Common.tasks",
+        "contentFiles/any/net46/Microsoft.Data.Entity.targets",
+        "contentFiles/any/net46/Microsoft.NETFramework.CurrentVersion.props",
+        "contentFiles/any/net46/Microsoft.NETFramework.CurrentVersion.targets",
+        "contentFiles/any/net46/Microsoft.NETFramework.props",
+        "contentFiles/any/net46/Microsoft.NETFramework.targets",
+        "contentFiles/any/net46/Microsoft.ServiceModel.targets",
+        "contentFiles/any/net46/Microsoft.VisualBasic.CrossTargeting.targets",
+        "contentFiles/any/net46/Microsoft.VisualBasic.CurrentVersion.targets",
+        "contentFiles/any/net46/Microsoft.VisualBasic.targets",
+        "contentFiles/any/net46/Microsoft.VisualStudioVersion.v11.Common.props",
+        "contentFiles/any/net46/Microsoft.VisualStudioVersion.v12.Common.props",
+        "contentFiles/any/net46/Microsoft.VisualStudioVersion.v14.Common.props",
+        "contentFiles/any/net46/Microsoft.WinFx.targets",
+        "contentFiles/any/net46/Microsoft.WorkflowBuildExtensions.targets",
+        "contentFiles/any/net46/Microsoft.Xaml.targets",
+        "contentFiles/any/net46/SdkResolvers/NuGet.MSBuildSdkResolver/NuGet.MSBuildSdkResolver.dll",
+        "contentFiles/any/net46/Workflow.Targets",
+        "contentFiles/any/net46/Workflow.VisualBasic.Targets",
+        "contentFiles/any/netcoreapp2.0/15.0/Microsoft.Common.props",
+        "contentFiles/any/netcoreapp2.0/MSBuild.dll",
+        "contentFiles/any/netcoreapp2.0/MSBuild.runtimeconfig.json",
+        "contentFiles/any/netcoreapp2.0/Microsoft.CSharp.CrossTargeting.targets",
+        "contentFiles/any/netcoreapp2.0/Microsoft.CSharp.CurrentVersion.targets",
+        "contentFiles/any/netcoreapp2.0/Microsoft.CSharp.targets",
+        "contentFiles/any/netcoreapp2.0/Microsoft.Common.CrossTargeting.targets",
+        "contentFiles/any/netcoreapp2.0/Microsoft.Common.CurrentVersion.targets",
+        "contentFiles/any/netcoreapp2.0/Microsoft.Common.overridetasks",
+        "contentFiles/any/netcoreapp2.0/Microsoft.Common.targets",
+        "contentFiles/any/netcoreapp2.0/Microsoft.Common.tasks",
+        "contentFiles/any/netcoreapp2.0/Microsoft.NETFramework.CurrentVersion.props",
+        "contentFiles/any/netcoreapp2.0/Microsoft.NETFramework.CurrentVersion.targets",
+        "contentFiles/any/netcoreapp2.0/Microsoft.NETFramework.props",
+        "contentFiles/any/netcoreapp2.0/Microsoft.NETFramework.targets",
+        "contentFiles/any/netcoreapp2.0/Microsoft.VisualBasic.CrossTargeting.targets",
+        "contentFiles/any/netcoreapp2.0/Microsoft.VisualBasic.CurrentVersion.targets",
+        "contentFiles/any/netcoreapp2.0/Microsoft.VisualBasic.targets",
+        "contentFiles/any/netcoreapp2.0/Microsoft.VisualStudioVersion.v11.Common.props",
+        "contentFiles/any/netcoreapp2.0/Microsoft.VisualStudioVersion.v12.Common.props",
+        "contentFiles/any/netcoreapp2.0/Microsoft.VisualStudioVersion.v14.Common.props",
+        "contentFiles/any/netcoreapp2.0/SdkResolvers/NuGet.MSBuildSdkResolver/NuGet.MSBuildSdkResolver.dll",
+        "contentFiles/any/netcoreapp2.1/15.0/Microsoft.Common.props",
+        "contentFiles/any/netcoreapp2.1/MSBuild.dll",
+        "contentFiles/any/netcoreapp2.1/MSBuild.runtimeconfig.json",
+        "contentFiles/any/netcoreapp2.1/Microsoft.CSharp.CrossTargeting.targets",
+        "contentFiles/any/netcoreapp2.1/Microsoft.CSharp.CurrentVersion.targets",
+        "contentFiles/any/netcoreapp2.1/Microsoft.CSharp.targets",
+        "contentFiles/any/netcoreapp2.1/Microsoft.Common.CrossTargeting.targets",
+        "contentFiles/any/netcoreapp2.1/Microsoft.Common.CurrentVersion.targets",
+        "contentFiles/any/netcoreapp2.1/Microsoft.Common.overridetasks",
+        "contentFiles/any/netcoreapp2.1/Microsoft.Common.targets",
+        "contentFiles/any/netcoreapp2.1/Microsoft.Common.tasks",
+        "contentFiles/any/netcoreapp2.1/Microsoft.NETFramework.CurrentVersion.props",
+        "contentFiles/any/netcoreapp2.1/Microsoft.NETFramework.CurrentVersion.targets",
+        "contentFiles/any/netcoreapp2.1/Microsoft.NETFramework.props",
+        "contentFiles/any/netcoreapp2.1/Microsoft.NETFramework.targets",
+        "contentFiles/any/netcoreapp2.1/Microsoft.VisualBasic.CrossTargeting.targets",
+        "contentFiles/any/netcoreapp2.1/Microsoft.VisualBasic.CurrentVersion.targets",
+        "contentFiles/any/netcoreapp2.1/Microsoft.VisualBasic.targets",
+        "contentFiles/any/netcoreapp2.1/Microsoft.VisualStudioVersion.v11.Common.props",
+        "contentFiles/any/netcoreapp2.1/Microsoft.VisualStudioVersion.v12.Common.props",
+        "contentFiles/any/netcoreapp2.1/Microsoft.VisualStudioVersion.v14.Common.props",
+        "contentFiles/any/netcoreapp2.1/SdkResolvers/NuGet.MSBuildSdkResolver/NuGet.MSBuildSdkResolver.dll",
+        "microsoft.build.runtime.15.7.0-preview-000124.nupkg.sha512",
+        "microsoft.build.runtime.nuspec",
+        "notices/THIRDPARTYNOTICES.txt"
+      ]
+    },
+    "Microsoft.Build.Tasks.Core/15.7.0-preview-000124": {
+      "sha512": "M0LWtJ/ZGZxRyAjQ6XRKNjWertfhTOj3k0jAyU+2zqDQlWgqThxJlJzB9rNYp201bh4H+zI7rwVOKeKObL7OSw==",
+      "type": "package",
+      "path": "microsoft.build.tasks.core/15.7.0-preview-000124",
+      "files": [
+        "lib/net46/Microsoft.Build.Tasks.Core.dll",
+        "lib/net46/Microsoft.Build.Tasks.Core.pdb",
+        "lib/net46/Microsoft.Build.Tasks.Core.xml",
+        "lib/netstandard2.0/Microsoft.Build.Tasks.Core.dll",
+        "lib/netstandard2.0/Microsoft.Build.Tasks.Core.pdb",
+        "lib/netstandard2.0/Microsoft.Build.Tasks.Core.xml",
+        "microsoft.build.tasks.core.15.7.0-preview-000124.nupkg.sha512",
+        "microsoft.build.tasks.core.nuspec",
+        "notices/THIRDPARTYNOTICES.txt"
+      ]
+    },
+    "Microsoft.Build.Utilities.Core/15.7.0-preview-000124": {
+      "sha512": "s2saDHBF7Cr/u3TL4sIPmn8TadR7V4W/dI0XcWNutSJdu21j5prG5EACCjtAL5VZB1rjfblpjZPwj5erEsz08g==",
+      "type": "package",
+      "path": "microsoft.build.utilities.core/15.7.0-preview-000124",
+      "files": [
+        "lib/net46/Microsoft.Build.Utilities.Core.dll",
+        "lib/net46/Microsoft.Build.Utilities.Core.pdb",
+        "lib/net46/Microsoft.Build.Utilities.Core.xml",
+        "lib/netstandard2.0/Microsoft.Build.Utilities.Core.dll",
+        "lib/netstandard2.0/Microsoft.Build.Utilities.Core.pdb",
+        "lib/netstandard2.0/Microsoft.Build.Utilities.Core.xml",
+        "microsoft.build.utilities.core.15.7.0-preview-000124.nupkg.sha512",
+        "microsoft.build.utilities.core.nuspec",
+        "notices/THIRDPARTYNOTICES.txt"
+      ]
+    },
+    "Microsoft.VisualStudio.Setup.Configuration.Interop/1.2.304-preview5": {
+      "sha512": "aucelZcV50kwW+sVk8MK/FgtwjeXQy+wRVqnLRsg+N9xNJkoOVpW6UzvvMVHKXy10pDQ5UVCxyWonJaAR66/lw==",
+      "type": "package",
+      "path": "microsoft.visualstudio.setup.configuration.interop/1.2.304-preview5",
+      "files": [
+        "lib/net35/Microsoft.VisualStudio.Setup.Configuration.Interop.dll",
+        "lib/net35/Microsoft.VisualStudio.Setup.Configuration.Interop.xml",
+        "microsoft.visualstudio.setup.configuration.interop.1.2.304-preview5.nupkg.sha512",
+        "microsoft.visualstudio.setup.configuration.interop.nuspec"
+      ]
+    },
+    "System.Collections.Immutable/1.3.1": {
+      "sha512": "n+AGX7zmiZumW9aggOkXaHzUeAS3EfeTErnkKCusyONUozbTv+kMb8VE36m+ldV6kF9g57G2c641KCdgH9E0pg==",
+      "type": "package",
+      "path": "system.collections.immutable/1.3.1",
+      "files": [
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/netstandard1.0/System.Collections.Immutable.dll",
+        "lib/netstandard1.0/System.Collections.Immutable.xml",
+        "lib/portable-net45+win8+wp8+wpa81/System.Collections.Immutable.dll",
+        "lib/portable-net45+win8+wp8+wpa81/System.Collections.Immutable.xml",
+        "system.collections.immutable.1.3.1.nupkg.sha512",
+        "system.collections.immutable.nuspec"
+      ]
+    },
+    "System.IO.Compression/4.3.0": {
+      "sha512": "YHndyoiV90iu4iKG115ibkhrG+S3jBm8Ap9OwoUAzO5oPDAWcr0SFwQFm0HjM8WkEZWo0zvLTyLmbvTkW1bXgg==",
+      "type": "package",
+      "path": "system.io.compression/4.3.0",
+      "files": [
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/net46/System.IO.Compression.dll",
+        "lib/portable-net45+win8+wpa81/_._",
+        "lib/win8/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/net46/System.IO.Compression.dll",
+        "ref/netcore50/System.IO.Compression.dll",
+        "ref/netcore50/System.IO.Compression.xml",
+        "ref/netcore50/de/System.IO.Compression.xml",
+        "ref/netcore50/es/System.IO.Compression.xml",
+        "ref/netcore50/fr/System.IO.Compression.xml",
+        "ref/netcore50/it/System.IO.Compression.xml",
+        "ref/netcore50/ja/System.IO.Compression.xml",
+        "ref/netcore50/ko/System.IO.Compression.xml",
+        "ref/netcore50/ru/System.IO.Compression.xml",
+        "ref/netcore50/zh-hans/System.IO.Compression.xml",
+        "ref/netcore50/zh-hant/System.IO.Compression.xml",
+        "ref/netstandard1.1/System.IO.Compression.dll",
+        "ref/netstandard1.1/System.IO.Compression.xml",
+        "ref/netstandard1.1/de/System.IO.Compression.xml",
+        "ref/netstandard1.1/es/System.IO.Compression.xml",
+        "ref/netstandard1.1/fr/System.IO.Compression.xml",
+        "ref/netstandard1.1/it/System.IO.Compression.xml",
+        "ref/netstandard1.1/ja/System.IO.Compression.xml",
+        "ref/netstandard1.1/ko/System.IO.Compression.xml",
+        "ref/netstandard1.1/ru/System.IO.Compression.xml",
+        "ref/netstandard1.1/zh-hans/System.IO.Compression.xml",
+        "ref/netstandard1.1/zh-hant/System.IO.Compression.xml",
+        "ref/netstandard1.3/System.IO.Compression.dll",
+        "ref/netstandard1.3/System.IO.Compression.xml",
+        "ref/netstandard1.3/de/System.IO.Compression.xml",
+        "ref/netstandard1.3/es/System.IO.Compression.xml",
+        "ref/netstandard1.3/fr/System.IO.Compression.xml",
+        "ref/netstandard1.3/it/System.IO.Compression.xml",
+        "ref/netstandard1.3/ja/System.IO.Compression.xml",
+        "ref/netstandard1.3/ko/System.IO.Compression.xml",
+        "ref/netstandard1.3/ru/System.IO.Compression.xml",
+        "ref/netstandard1.3/zh-hans/System.IO.Compression.xml",
+        "ref/netstandard1.3/zh-hant/System.IO.Compression.xml",
+        "ref/portable-net45+win8+wpa81/_._",
+        "ref/win8/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "runtimes/unix/lib/netstandard1.3/System.IO.Compression.dll",
+        "runtimes/win/lib/net46/System.IO.Compression.dll",
+        "runtimes/win/lib/netstandard1.3/System.IO.Compression.dll",
+        "system.io.compression.4.3.0.nupkg.sha512",
+        "system.io.compression.nuspec"
+      ]
+    },
+    "System.Runtime.InteropServices.RuntimeInformation/4.3.0": {
+      "sha512": "cbz4YJMqRDR7oLeMRbdYv7mYzc++17lNhScCX0goO2XpGWdvAt60CGN+FHdePUEHCe/Jy9jUlvNAiNdM+7jsOw==",
+      "type": "package",
+      "path": "system.runtime.interopservices.runtimeinformation/4.3.0",
+      "files": [
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/System.Runtime.InteropServices.RuntimeInformation.dll",
+        "lib/netstandard1.1/System.Runtime.InteropServices.RuntimeInformation.dll",
+        "lib/win8/System.Runtime.InteropServices.RuntimeInformation.dll",
+        "lib/wpa81/System.Runtime.InteropServices.RuntimeInformation.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/netstandard1.1/System.Runtime.InteropServices.RuntimeInformation.dll",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "runtimes/aot/lib/netcore50/System.Runtime.InteropServices.RuntimeInformation.dll",
+        "runtimes/unix/lib/netstandard1.1/System.Runtime.InteropServices.RuntimeInformation.dll",
+        "runtimes/win/lib/net45/System.Runtime.InteropServices.RuntimeInformation.dll",
+        "runtimes/win/lib/netcore50/System.Runtime.InteropServices.RuntimeInformation.dll",
+        "runtimes/win/lib/netstandard1.1/System.Runtime.InteropServices.RuntimeInformation.dll",
+        "system.runtime.interopservices.runtimeinformation.4.3.0.nupkg.sha512",
+        "system.runtime.interopservices.runtimeinformation.nuspec"
+      ]
+    },
+    "System.Threading.Tasks.Dataflow/4.5.24": {
+      "sha512": "xE/T1IX6nUYwNvoh8F2xFwHtKlFf/fhAAUpdNmSQINnMT7CL/cEWvvQYEXqZ2cfEtRpucp50ZhoLWC3MtPMfYg==",
+      "type": "package",
+      "path": "system.threading.tasks.dataflow/4.5.24",
+      "files": [
+        "License-Stable.rtf",
+        "lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Dataflow.dll",
+        "lib/portable-net45+win8+wp8+wpa81/system.threading.tasks.dataflow.xml",
+        "lib/portable-net45+win8+wpa81/System.Threading.Tasks.Dataflow.dll",
+        "lib/portable-net45+win8+wpa81/system.threading.tasks.dataflow.xml",
+        "system.threading.tasks.dataflow.4.5.24.nupkg.sha512",
+        "system.threading.tasks.dataflow.nuspec"
+      ]
+    },
+    "lib/1.0.0": {
+      "type": "project",
+      "path": "../lib/lib.csproj",
+      "msbuildProject": "../lib/lib.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.7": [
+      "Microsoft.Build.Runtime >= 15.7.0-preview-000124",
+      "lib >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "E:\\repro\\pkg": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "E:\\repro\\msappP2PWithNugetConfig\\msapp\\msapp.csproj",
+      "projectName": "msapp",
+      "projectPath": "E:\\repro\\msappP2PWithNugetConfig\\msapp\\msapp.csproj",
+      "packagesPath": "E:\\repro\\pkg",
+      "outputPath": "E:\\repro\\msappP2PWithNugetConfig\\msapp\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "E:\\repro\\msappP2PWithNugetConfig\\NuGet.Config",
+        "C:\\Users\\micodoba\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net47"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {},
+        "https://dotnet.myget.org/F/msbuild/api/v3/index.json": {}
+      },
+      "frameworks": {
+        "net47": {
+          "projectReferences": {
+            "E:\\repro\\msappP2PWithNugetConfig\\lib\\lib.csproj": {
+              "projectPath": "E:\\repro\\msappP2PWithNugetConfig\\lib\\lib.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net47": {
+        "dependencies": {
+          "Microsoft.Build.Runtime": {
+            "target": "Package",
+            "version": "[15.7.0-preview-000124, )"
+          }
+        }
+      }
+    },
+    "runtimes": {
+      "win7-x86": {
+        "#import": []
+      }
+    }
+  }
+}
