@@ -4,6 +4,13 @@
     <TargetFramework>net47</TargetFramework>
   </PropertyGroup>
 
-  <Import Project="..\References.proj" />
+  <PropertyGroup>
+    <RestoreSources>$(RestoreSources);https://dotnet.myget.org/F/msbuild/api/v3/index.json</RestoreSources>
+    <RestoreSources>$(RestoreSources);https://api.nuget.org/v3/index.json</RestoreSources>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Build.Runtime" Version="15.7.0-preview-000124"/>
+  </ItemGroup>
 
 </Project>
